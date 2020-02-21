@@ -1,0 +1,46 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+.stoplight {
+  height: 500px;
+  width:300px;
+  border: 2px solid black;
+  background: black;
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.redlight {
+  /* background: red; */
+  border: 1px solid red;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+}
+.yellowlight {
+  /* background: yellow; */
+  border: 1px solid yellow;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+}
+.greenlight {
+  /* background: green; */
+  border: 1px solid green;
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+}
