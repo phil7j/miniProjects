@@ -1,0 +1,14 @@
+
+.card {
+    border: 1px solid black;
+    margin: 10px;
+    width: 250px;
+    background: rgba(0, 0, 0, 0.911);
+}
+.header {
+    color: rgb(45, 69, 204);
+}
+
+h4 {
+    color: grey;
+}
