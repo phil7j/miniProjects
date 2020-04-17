@@ -6,29 +6,32 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="site.php" method="post">
-    First Num: <input type="number" name="num1"> <br>
-    OP:<input type="text" name="op"> <br>
-    Second Num:<input type="number" name="num2"> <br>
-        <input type="submit">
-    </form>
+    <?php include "header.html"?>
+
 
     <?php
-    $num1 = $_POST["num1"];
-    $num2 = $_POST["num2"];
-    $OP = $_POST["op"];
+        class Book {
+            var $title;
+            var $author;
+            var $pages;
 
-    if($OP == "+") {
-        echo $num1 + $num2;
-    } elseif($OP == "-"){
-        echo $num1 - $num2;
-    } elseif($OP == "*"){
-        echo $num1 * $num2;
-    } elseif($OP == "/"){
-        echo $num1 / $num2;
-    } else {
-        echo "Invalid Operator";
-    }
+            function __construct($aTitle, $aAuthor, $aPages){
+                $this->title = $aTitle;
+                $this->author = $aAuthor;
+                $this->pages = $aPages;
+            }
+
+
+        }
+
+        $book1 = new Book("Harry Potter","JK Rowling",400);
+
+        echo $book1->title;
+
     ?>
+
+
+
+    <?php include "footer.html" ?>
 </body>
 </html>
